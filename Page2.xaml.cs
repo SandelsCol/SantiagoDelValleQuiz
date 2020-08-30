@@ -28,8 +28,11 @@ namespace EventParadigmQuiz
         {
             string ProductName = txtproductname.Text;
             string category = lblcategory.Content.ToString();
+            string Cost = lblprice.Content.ToString();
+            string Type = cmbbox.ToString();
+            string time = lbltime.ToString();
 
-            txtresult.Text = ProductName + "\n" + category;
+            txtresult.Text = ProductName + "\n" + category + "\n" + Cost + "\n" + time + "\n" + Type;
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
@@ -49,10 +52,58 @@ namespace EventParadigmQuiz
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+        }
+        private void Category(object sender, TextCompositionEventArgs e)
+        {
 
         }
 
-        private void Category(object sender, TextCompositionEventArgs e)
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.IsChecked.Value)
+            {
+                lblcategory.Content = rb.Content.ToString();
+            }
+        }
+
+        private void Free_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox pb = sender as CheckBox;
+            if (pb.IsChecked.Value)
+            {
+                lblprice.Content = pb.Content.ToString();
+            }
+        }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.IsChecked.Value)
+            {
+                lblcategory.Content = rb.Content.ToString();
+            }
+        }
+
+        private void Cheap_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox pb = sender as CheckBox;
+            if (pb.IsChecked.Value)
+            {
+                lblprice.Content = pb.Content.ToString();
+            }
+        }
+
+        private void Expensive_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox pb = sender as CheckBox;
+            if (pb.IsChecked.Value)
+            {
+                lblprice.Content = pb.Content.ToString();
+            }
+        }
+
+        private void txtproductname_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

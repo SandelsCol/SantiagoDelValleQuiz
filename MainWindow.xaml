@@ -7,13 +7,33 @@
         mc:Ignorable="d"
         Title="Principal" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <Frame Name="MainFrame" Content="" HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="650" NavigationUIVisibility="Hidden" RenderTransformOrigin="0.502,0.677" Margin="150,84,0,0"/>
-        <Label Content="" HorizontalAlignment="Center" Height="143" Margin="0,-33,0,0" VerticalAlignment="Top" Width="244">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="91*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Name="MainFrame" Content="" HorizontalAlignment="Left" Height="346" VerticalAlignment="Top" Width="650" NavigationUIVisibility="Hidden" RenderTransformOrigin="0.502,0.677" Margin="150,88,0,0" Grid.ColumnSpan="2"/>
+        <Label HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="150" Background="Black"/>
+        <Label Content="" HorizontalAlignment="Left" Height="100" Margin="20,38,0,0" VerticalAlignment="Top" Width="110">
             <Label.Background>
-                <ImageBrush ImageSource="/Screenshot_1.png"/>
+                <ImageBrush ImageSource="/MARIO_PORTADA-k6rG-U601588910703s0B-624x385@El Correo.jpg"/>
             </Label.Background>
         </Label>
-        <Label Content="" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="150" Background="Black"/>
+        <Label Content="" HorizontalAlignment="Left" Height="99" Margin="20,0,0,0" VerticalAlignment="Center" Width="111">
+            <Label.Background>
+                <ImageBrush ImageSource="/call-of-duty-bans.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Height="99" Margin="20,295,0,0" VerticalAlignment="Top" Width="111">
+            <Label.Background>
+                <ImageBrush ImageSource="/1366_2000.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Height="88" Margin="150,0,0,0" VerticalAlignment="Top" Width="650" Background="Black" Grid.ColumnSpan="2"/>
+        <Label Content="" HorizontalAlignment="Left" Height="99" Margin="294,-11,0,0" VerticalAlignment="Top" Width="252" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="/Screenshot_3.png"/>
+            </Label.Background>
+        </Label>
 
     </Grid>
 </Window>

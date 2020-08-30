@@ -14,7 +14,7 @@
         <TextBox Name="txtusername" HorizontalAlignment="Left" Margin="222,76,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <Button Name="btnlogin" Content="Login" HorizontalAlignment="Left" Margin="265,155,0,0" VerticalAlignment="Top" Click="btnlogin_Click"/>
         <PasswordBox Name="txtpassword" HorizontalAlignment="Left" Margin="222,113,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="" HorizontalAlignment="Left" Height="93" Margin="150,200,0,0" VerticalAlignment="Top" Width="244">
+        <Label Content="" HorizontalAlignment="Left" Height="122" Margin="150,195,0,0" VerticalAlignment="Top" Width="255">
             <Label.Background>
                 <ImageBrush ImageSource="/lite-01_4_cropped.jpg"/>
             </Label.Background>
