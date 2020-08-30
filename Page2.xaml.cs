@@ -29,10 +29,10 @@ namespace EventParadigmQuiz
             string ProductName = txtproductname.Text;
             string category = lblcategory.Content.ToString();
             string Cost = lblprice.Content.ToString();
-            string Type = cmbbox.ToString();
+            string Type = cmbbox.Text.ToString();
             string time = lbltime.ToString();
 
-            txtresult.Text = ProductName + "\n" + category + "\n" + Cost + "\n" + time + "\n" + Type;
+            txtresult.Text += "\n" + ProductName + "\n" + category + "\n" + Cost + "\n" + time + "\n" + Type;
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
