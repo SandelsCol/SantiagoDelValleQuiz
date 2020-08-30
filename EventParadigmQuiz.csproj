@@ -6,4 +6,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="lite-01_4_cropped.jpg" />
+    <None Remove="Screenshot_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="lite-01_4_cropped.jpg" />
+    <Resource Include="Screenshot_1.png" />
+  </ItemGroup>
+
 </Project>

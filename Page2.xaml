@@ -8,15 +8,30 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Background="White" Width="790" Height="350">
-        <TextBlock Name="txtresult" HorizontalAlignment="Left" Margin="505,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="294" Width="252" Background="#FF938686"/>
-        <Label Content="Product Name" HorizontalAlignment="Left" Margin="67,66,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtproductname" HorizontalAlignment="Left" Margin="158,70,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Name="btnsave" Content="Save" HorizontalAlignment="Left" Margin="182,302,0,0" VerticalAlignment="Top" Width="72" Click="btnsave_Click"/>
-        <RadioButton GroupName="Category" Content="Electronics" HorizontalAlignment="Left" Margin="158,160,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton GroupName="Category" Content="Clothes" HorizontalAlignment="Left" Margin="158,135,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="79,142,0,0" VerticalAlignment="Top" Width="62"/>
-        <Label Name="lblcategory" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="79,228,0,0" VerticalAlignment="Top"/>
-
+    <Grid Background="White" Width="650" Height="350" TextInput="Category">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="Auto" MinWidth="650"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="txtresult" HorizontalAlignment="Left" Margin="450,-6,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="356" Width="200" Background="#FF938686" Grid.Column="1"/>
+        <Label Content="Product Name" HorizontalAlignment="Left" Margin="31,24,0,0" VerticalAlignment="Top" Height="26" Width="86" Grid.ColumnSpan="2"/>
+        <TextBox Name="txtproductname" HorizontalAlignment="Left" Margin="128,32,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Height="18"/>
+        <Button Name="btnsave" Content="Save" HorizontalAlignment="Left" Margin="158,271,0,0" VerticalAlignment="Top" Width="72" Click="btnsave_Click" Grid.Column="1" Height="20"/>
+        <RadioButton GroupName="Category" Content="PS4" HorizontalAlignment="Left" Margin="31,96,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Grid.ColumnSpan="2" Height="15" Width="75"/>
+        <RadioButton GroupName="Category" Content="Xbox One" HorizontalAlignment="Left" Margin="31,116,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Grid.ColumnSpan="2" Height="15" Width="81"/>
+        <Label Content="Plataform" HorizontalAlignment="Left" Margin="31,65,0,0" VerticalAlignment="Top" Width="62" Height="26" Grid.ColumnSpan="2"/>
+        <Label Name="lblcategory" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="79,228,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.ColumnSpan="2"/>
+        <Button Content="Log out" HorizontalAlignment="Left" Margin="22,307,0,0" VerticalAlignment="Top" Click="Button_Click" Height="20" Width="45" Grid.ColumnSpan="2"/>
+        <ComboBox Name="cmbbox" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged" FontStyle="Normal" Height="30" Grid.Column="1">
+            <ComboBoxItem Content="Accion"/>
+            <ComboBoxItem Content="Multijugador"/>
+            <ComboBoxItem Content="Aventuras"/>
+            <ComboBoxItem Content="Música"/>
+            <ComboBoxItem Content="Deportivo"/>
+            <ComboBoxItem Content="Estrategía"/>
+            <ComboBoxItem Content="Juegos de mesa"/>
+            <Label Content="Label" Height="19" Width="80"/>
+        </ComboBox>
+        <RadioButton GroupName="Category" Content="Pc" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="32,136,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

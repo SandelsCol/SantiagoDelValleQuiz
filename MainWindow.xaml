@@ -5,10 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EventParadigmQuiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Principal" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <Label Content="My app" HorizontalAlignment="Center" VerticalAlignment="Top" Width="220" FontSize="72" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
-        <Frame Name="MainFrame" Content="" HorizontalAlignment="Center" Height="350" Margin="0,74,0,0" VerticalAlignment="Top" Width="790" NavigationUIVisibility="Hidden" RenderTransformOrigin="0.502,0.677"/>
+        <Frame Name="MainFrame" Content="" HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="650" NavigationUIVisibility="Hidden" RenderTransformOrigin="0.502,0.677" Margin="150,84,0,0"/>
+        <Label Content="" HorizontalAlignment="Center" Height="143" Margin="0,-33,0,0" VerticalAlignment="Top" Width="244">
+            <Label.Background>
+                <ImageBrush ImageSource="/Screenshot_1.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="150" Background="Black"/>
 
     </Grid>
 </Window>

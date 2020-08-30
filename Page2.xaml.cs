@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Principal;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -38,6 +39,22 @@ namespace EventParadigmQuiz
             {
                 lblcategory.Content = rb.Content.ToString();
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+        MainWindow p = (MainWindow)Window.GetWindow(this);
+            p.MainFrame.NavigationService.Navigate(new Page1());
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Category(object sender, TextCompositionEventArgs e)
+        {
+
         }
     }
 }
